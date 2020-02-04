@@ -1,0 +1,84 @@
+html{
+	cursor: url(Pointer.cur), auto !important;
+}
+
+body {
+  background-color: PowderBlue;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: DFKai-sb;
+}
+h1 {
+  cursor: url(Text.cur), auto;
+  color: black;
+}
+h2 {
+  cursor: url(Text.cur), auto;
+  color: Tomato;
+}
+
+h3 {
+  cursor: url(Text.cur), auto;
+  color: DarkGreen;
+}
+
+p {
+  cursor: url(Text.cur), auto;
+  color: black;
+  font-family: DFKai-sb;
+}
+
+pre {
+  cursor: url(Text.cur), auto;
+  color: black;
+  font-family: DFKai-sb;
+}
+a {
+  cursor: url(Associate.cur), auto;
+  font-family: DFKai-sb;
+}
+
+a:link {
+  color: orange;
+  text-decoration: none;
+  display: inline-block;
+}
+a:visited {
+  color: coral;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  color: Fuchsia;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+ol {
+  cursor: url(Text.cur), auto;
+  color: black;
+}
+ul {
+  cursor: url(Text.cur), auto;
+  color: black;
+}
+
+mark{
+  font-family: DFKai-sb;
+  color: Blue;
+  background-color: powderblue;
+  
+}
+
+table, th, td {
+  cursor: url(Text.cur), auto;
+  border-collapse: collapse;
+  border-spacing: 15px;
+  color: red;
+  font-size: 20px;
+}
