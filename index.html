@@ -16,16 +16,34 @@ matplotlib 可以滿足我們幾乎所有需求，即使要做成動畫也難不
 </pre>
 
 <h2>Vpython 使用範例</h2>
-<pre>  下面程式碼範例為一正方體等速前進，code:
+<pre>  下面程式碼範例為一正方體等速前進 (紅色球為圓心)，code:
 
 <b>import vpython as v
-v.box()</b>
+
+scene=v.canvas()
+scene.range=1
+scene.autoscale=False
+
+l=0.2
+cube=v.box(pos=v.vector(0,0,0),length=l, height=l, width=l)
+ball=v.sphere(pos=v.vector(0,0,0),color=v.color.red,radius=0.1)
+
+for i in range(100):
+	cube.pos=v.vector(i*0.01,0,0)
+	v.sleep(0.02)</b>
 
 執行程式後會從瀏覽器跳出一個視窗，展示這支程式的內容。
   (Vpython 僅利用瀏覽器為展示平台，執行時並不需要網路連線；此外，在 Spyder 上使用需要<a href="#SpyderVpython">額外設定</a>)
-<img  src="web_page.png" width="700" height="400">
+<img  src="web_page.png" width="500" height="400">
 
-Vpython 模組中還有許多功能，請至<a href="https://vpython.org/">官網</a>內 "Documentation" 查詢各種功能與用法。
+  示範程式中裡用到了 Vpython 中的一些函式:
+<ol>
+	<li>canvas:創建場景</li>
+	<li>box:創建方形物體</li>
+	<li>sphere:創建球形物體</li>
+	<li>sleep:暫停動作(以秒為單位，可用於製作動畫)</li>
+</ol>
+關於以上含式的詳細使用方式、以及Vpython 模組中其他功能，請至<a href="https://vpython.org/">官網</a>內 "Documentation" 查詢。
 </pre>
 
 <h2 id="SpyderVpython">在 Spyder 上使用 Vpython</h2>
